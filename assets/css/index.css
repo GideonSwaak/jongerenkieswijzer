@@ -52,7 +52,7 @@ section {
   height: 350px;
   z-index: 1;
   transform: translate(-50%, -50%) translate(0px, -40px);
-  box-shadow: 0 0 100px 2px #3f3f3f;
+  box-shadow: 0 0 100px 30px #3f3f3f;
 }
 
 .card-front-logo {
@@ -110,6 +110,42 @@ section {
 
 .start-button:active {
   scale: 0.8;
+  transition: 0.3s;
+}
+
+.little-arrow {
+  background-color: rgb(0, 0, 0);
+  width: 65px;
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  border: 2px solid transparent;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-radius: 15px 15px 0px 0px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.little-arrow > span {
+  color: #fffc61;
+  font-size: 50px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  transition: 0.3s;
+}
+
+.little-arrow:hover {
+  transition: 0.3s;
+  padding-top: 10px;
+}
+
+.little-arrow:hover span {
+  padding-bottom: 10px;
   transition: 0.3s;
 }
 
