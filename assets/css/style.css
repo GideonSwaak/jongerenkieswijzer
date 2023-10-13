@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
+  overflow: hidden;
 }
 
 section {
@@ -12,25 +13,299 @@ section {
   height: 100vh;
 }
 
+#swiper {
+  height: 70vh;
+  aspect-ratio: 2 / 3;
+  perspective: 1000px;
+  perspective-origin: center 50%;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: translateZ(calc(-10px * var(--i)))
+    translateY(calc(-10px * var(--i))) translateX(calc(10px * var(--i))); /* Adjusted the translateX value */
+  filter: drop-shadow(2px 2px 7px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.5s;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#like,
+#dislike {
+  font-size: 16vh;
+  border-radius: 50%;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  animation-name: animation1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  /* don't run animation at the beginning */
+  animation-play-state: paused;
+}
+
+#like.trigger,
+#dislike.trigger {
+  animation-name: animation2;
+}
+
+#like {
+  color: red;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#dislike {
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes animation1 {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation2 {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.hidden-card {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+/* .card-container {
+  position: relative;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 17px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.card1 {
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -55%) translate(-0px, -20px);
+  z-index: 3;
+  box-shadow: 0 0 15px -6px #000000;
+}
+
+.card2 {
+  width: 550px;
+  height: 350px;
+  z-index: 2;
+  transform: translate(-50%, -56%) translate(-0px, -20px);
+  box-shadow: 0 0 11px -6px #000000;
+}
+
+.card3 {
+  width: 590px;
+  height: 400px;
+  z-index: 1;
+  transform: translate(-50%, -50%) translate(0px, -40px);
+  box-shadow: 0 0 10px -6px #000000;
+} */
+
 .l-container {
   background: #ffffff;
   width: 100%;
-  max-width: 574px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 500px;
+  padding: 20px 25px;
   box-sizing: border-box;
   border-radius: 17px;
-  box-shadow: 0 0 8px -6px #000000;
+  box-shadow: 0 0 13px -6px #000000;
+  margin: 0px 20px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 995px), screen and (max-height: 400px) {
+  .l-container {
+    height: 70vh;
+  }
 }
 
 .l-container-logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   width: 100%;
-  height: 100px;
-  background: url(/assets/img/logo-black.svg);
+  height: 40px;
+  margin: 20px 0px 50px 0px;
+  background: url(/assets/img/logos/logo-black.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: left;
+}
+
+.l-container-info > p {
+  text-align: left;
+}
+
+.midbold {
+  font-weight: 550;
+}
+
+.l-container-start {
+  display: flex;
+  justify-content: center;
+}
+
+.start-button {
+  font-family: "Montserrat";
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0px;
+  width: 100%;
+  margin: 20px 0px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.start-button:hover {
+  scale: 1;
+  transition: 0.3s;
+}
+
+.start-button:active {
+  scale: 0.8;
+  transition: 0.3s;
+}
+
+.l-container-credits {
+  text-align: center;
+  font-weight: 600;
+}
+
+.l-container-credits-images {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.l-container-credits-images-first-row {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.l-container-credits-images-second-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.credit-image-first-row {
+  width: 100%;
+  padding-top: 20%;
+  background-size: 140px;
+  background-repeat: no-repeat;
   background-position: center center;
+}
+
+.credit-image-second-row {
+  width: 100%;
+  padding-top: 30%;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.credit-image-first-row.logo-izi {
+  background-image: url("/assets/img/logos/logo-izi-solutions.png");
+}
+
+.credit-image-first-row.logo-represent {
+  background-image: url("/assets/img/logos/logo-represent-jezelf.png");
+}
+
+.credit-image-second-row.logo-njr {
+  background-image: url("/assets/img/logos/logo-njr.png");
+}
+
+.credit-image-second-row.logo-wemagine {
+  background-image: url("/assets/img/logos/logo-wemagine.png");
+}
+
+.credit-image-second-row.logo-fnv-yu {
+  background-image: url("/assets/img/logos/logo-fnv-yu.svg");
+}
+.bubbles-left {
+  position: absolute;
+  overflow: hidden;
+  top: -10%; /* Adjusted top position */
+  left: -6%; /* Adjusted left position */
+  width: 40vw; /* Adjusted width */
+  height: 40vh; /* Adjusted height */
+}
+
+.bubbles-left-svg {
+  background: url("/assets/img/bubbles-left.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%; /* Set width to 100% to fill the container */
+  height: 100%; /* Set height to 100% to fill the container */
+}
+
+.bubbles-right {
+  position: absolute;
+  overflow: hidden;
+  top: -10%; /* Adjusted top position */
+  right: -6%; /* Adjusted right position */
+  width: 40vw; /* Adjusted width */
+  height: 40vh; /* Adjusted height */
+}
+
+.bubbles-right-svg {
+  background: url("/assets/img/bubbles-left.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%; /* Set width to 100% to fill the container */
+  height: 100%; /* Set height to 100% to fill the container */
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
