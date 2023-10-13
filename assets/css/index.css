@@ -39,8 +39,8 @@ section {
 
 .middle {
   background-color: #fffc61;
-  width: 550px;
-  height: 270px;
+  width: 565px;
+  height: 300px;
   z-index: 2;
   transform: translate(-50%, -56%) translate(-0px, -20px);
   box-shadow: 0 0 100px 2px #4b4a4a;
@@ -48,11 +48,11 @@ section {
 
 .back {
   background-color: #fffc61;
-  width: 590px;
-  height: 300px;
+  width: 620px;
+  height: 350px;
   z-index: 1;
   transform: translate(-50%, -50%) translate(0px, -40px);
-  box-shadow: 0 0 100px 2px #ffffff;
+  box-shadow: 0 0 100px 2px #3f3f3f;
 }
 
 .card-front-logo {
@@ -121,14 +121,14 @@ section {
   }
 
   .middle {
-    width: 350px;
-    height: 170px;
-    transform: translate(-50%, -56%) translate(-0px, -20px);
+    width: 310px;
+    height: 240px;
+    transform: translate(-50%, -63%) translate(-0px, -20px);
   }
 
   .back {
-    width: 390px;
-    height: 200px;
+    width: 330px;
+    height: 265px;
     transform: translate(-50%, -50%) translate(0px, -40px);
   }
 
