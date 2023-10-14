@@ -5,7 +5,7 @@
 
 body {
   background: radial-gradient(circle at 100% 0%, #9b8f20 0%, transparent 70%),
-    #000 url(/assets/img/desktop-22.svg) 0 20%;
+    #000;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -145,20 +145,6 @@ section {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 718px) {
-  body {
-    background: radial-gradient(circle at 100% 20%, #9b8f20 0%, transparent 70%),
-      #000 url(/assets/img/222-ipad.svg) 0 30%;
-    background-size: cover;
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-    font-family: "Montserrat";
-  }
-}
-
 @media only screen and (max-width: 630px) {
   .front {
     width: 300px;
@@ -189,33 +175,5 @@ section {
 
   .start-button {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    background: radial-gradient(circle at 100% 20%, #9b8f20 0%, transparent 70%),
-      #000 url(/assets/img/222-600px.svg) 0 30%;
-    background-size: cover;
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-    font-family: "Montserrat";
-  }
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    background: radial-gradient(circle at 100% 20%, #9b8f20 0%, transparent 70%),
-      #000 url(/assets/img/222-mobil.svg) 0 30%;
-    background-size: cover;
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-    font-family: "Montserrat";
   }
 }
