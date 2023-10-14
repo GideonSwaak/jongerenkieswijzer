@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle at 100% 0%, #9b8f20 0%, transparent 70%),
+    #000 url(/assets/img/desktop-22.svg) 0 20%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Montserrat";
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.card-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 100% 0%, #fffc61 0%, transparent 70%);
+  z-index: 1; /* Adjust the z-index as needed to ensure it covers the card-container */
+  border-radius: 17px; /* Match the card's border radius */
+  pointer-events: none; /* This ensures that the pseudo-element doesn't interfere with interactivity */
+}
+
+.card {
+  border-radius: 17px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.front {
+  background-color: #000000;
+  width: 500px;
+  height: 400px;
+  transform: translate(-50%, -55%) translate(-0px, -20px);
+  z-index: 3;
+  box-shadow: 0 0 15px -6px #000000;
+}
+
+.middle {
+  background-color: #fffc61;
+  width: 565px;
+  height: 300px;
+  z-index: 2;
+  transform: translate(-50%, -56%) translate(-0px, -20px);
+  box-shadow: 0 0 100px 2px #4b4a4a;
+}
+
+.back {
+  background-color: #d9d9d9;
+  opacity: 0.1;
+  width: 620px;
+  height: 350px;
+  z-index: 1;
+  transform: translate(-50%, -50%) translate(0px, -40px);
+  box-shadow: 0 0 100px 30px #3f3f3f;
+}
+
+.card-front-logo {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: 45px;
+  margin: 50px 0px 50px 20px;
+  background: url(/assets/img/logos/jongerenkieswijzer-white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.card-front-info {
+  color: #fff;
+  width: 90%;
+  margin: auto;
+  font-size: 17px;
+}
+
+.midbold {
+  font-weight: 600;
+}
+
+.card-front-start-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-button {
+  font-family: "Montserrat";
+  font-weight: bold;
+  background: #fffc61;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0px;
+  width: 90%;
+  margin: 20px auto;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.start-button:hover {
+  scale: 1;
+  transition: 0.3s;
+}
+
+.start-button:active {
+  scale: 0.8;
+  transition: 0.3s;
+}
+
+.little-arrow:hover {
+  transition: 0.3s;
+  padding-top: 10px;
+}
+
+.little-arrow:hover span {
+  padding-bottom: 10px;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 718px) {
+  body {
+    background: radial-gradient(circle at 100% 20%, #9b8f20 0%, transparent 70%),
+      #000 url(/assets/img/222-ipad.svg) 0 30%;
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Montserrat";
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .front {
+    width: 300px;
+    height: 330px;
+    transform: translate(-50%, -55%) translate(-0px, -20px);
+  }
+
+  .middle {
+    width: 310px;
+    height: 240px;
+    transform: translate(-50%, -63%) translate(-0px, -20px);
+  }
+
+  .back {
+    width: 330px;
+    height: 265px;
+    transform: translate(-50%, -50%) translate(0px, -40px);
+  }
+
+  .card-front-logo {
+    height: 30px;
+    margin: 30px 0px 30px 20px;
+  }
+
+  .card-front-info {
+    font-size: 14px;
+  }
+
+  .start-button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: radial-gradient(circle at 100% 20%, #9b8f20 0%, transparent 70%),
+      #000 url(/assets/img/222-600px.svg) 0 30%;
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Montserrat";
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background: radial-gradient(circle at 100% 20%, #9b8f20 0%, transparent 70%),
+      #000 url(/assets/img/222-mobil.svg) 0 30%;
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Montserrat";
+  }
+}
