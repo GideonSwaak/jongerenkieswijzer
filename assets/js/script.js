@@ -7,132 +7,132 @@ class Carousel {
     this.cardData = [
       {
         number: "1/20",
-        memeImage: "/assets/img/memes/meme1.png",
+        memeImage: "/assets/img/memes/mem2.png",
         question:
           "Het bindend studieadvies moet voor alle opleidingen (MBO, HBO, WO) worden afgeschaft",
         readmore: "Lees toelichting.",
       },
       {
         number: "2/20",
-        memeImage: "assets/img/memes/meme2.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question:
           "Organisaties moeten verplicht worden om stagevergoeding te betalen",
         readmore: "Lees toelichting.",
       },
       {
         number: "3/20",
-        memeImage: "assets/img/memes/meme3.jpg",
+        memeImage: "assets/img/memes/mem2.png",
         question: "Het minimumloon moet gelden vanaf 18 jaar",
         readmore: "Lees toelichting.",
       },
       {
         number: "4/20",
-        memeImage: "assets/img/memes/meme4.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question: "Er moet regelgeving komen voor buy now, pay later diensten",
         readmore: "Lees toelichting.",
       },
       {
         number: "5/20",
-        memeImage: "assets/img/memes/meme5.jpg",
+        memeImage: "assets/img/memes/mem2.png",
         question: "Keti Koti moet een nationale vrije dag worden",
         readmore: "Lees toelichting.",
       },
       {
         number: "6/20",
-        memeImage: "assets/img/memes/meme6.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question:
           "De leeftijdsgrens van 18 jaar in de jeugdzorg moet worden versoepeld",
         readmore: "Lees toelichting.",
       },
       {
         number: "7/20",
-        memeImage: "assets/img/memes/meme7.jpg",
+        memeImage: "assets/img/memes/mem2.png",
         question: "Er moet accijns komen op vapen",
         readmore: "Lees toelichting.",
       },
       {
         number: "8/20",
-        memeImage: "assets/img/memes/meme8.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question: "Het openbaar vervoer moet gratis worden",
         readmore: "Lees toelichting.",
       },
       {
         number: "9/20",
-        memeImage: "assets/img/memes/meme9.jpg",
+        memeImage: "assets/img/memes/mem2.png",
         question:
           "De landelijke overheid moet zorgen voor meer subsidie voor openbaar streekvervoer",
         readmore: "Lees toelichting.",
       },
       {
         number: "10/20",
-        memeImage: "assets/img/memes/meme10.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question:
           "Nederland moet streven om zo snel mogelijk klimaatneutraal te zijn",
         readmore: "Lees toelichting.",
       },
       {
         number: "11/20",
-        memeImage: "assets/img/memes/meme11.jpg",
+        memeImage: "assets/img/memes/mem2.png",
         question: "Stemrecht van jongeren moet verlaagd worden naar 16 jaar",
         readmore: "Lees toelichting.",
       },
       {
         number: "12/20",
-        memeImage: "assets/img/memes/meme12.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question:
           "Het eigen risico moet voor jongeren tot en met 23 jaar worden afgeschaft",
         readmore: "Lees toelichting.",
       },
       {
         number: "13/20",
-        memeImage: "assets/img/memes/meme13.jpg",
+        memeImage: "assets/img/memes/mem2.png",
         question:
           "De overheid moet meer investeren in sportieve, culturele en artistieke activiteiten voor jongeren",
         readmore: "Lees toelichting.",
       },
       {
         number: "14/20",
-        memeImage: "assets/img/memes/meme14.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question: "Er moet een generatietoets komen",
         readmore: "Lees toelichting.",
       },
       {
         number: "15/20",
-        memeImage: "assets/img/memes/meme15.jpg",
+        memeImage: "assets/img/memes/mem2.png",
         question:
           "Jongeren die onder het leenstelsel hebben gestudeerd moeten meer worden gecompenseerd voor de opgebouwde studieschuld",
         readmore: "Lees toelichting.",
       },
       {
         number: "16/20",
-        memeImage: "assets/img/memes/meme16.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question:
           "Studentenkamers moeten ook in aanmerking kunnen komen voor huurtoeslag",
         readmore: "Lees toelichting.",
       },
       {
         number: "17/20",
-        memeImage: "assets/img/memes/meme17.jpg",
+        memeImage: "assets/img/memes/mem2.png",
         question: "Huurprijzen in de vrije sector moeten worden vastgesteld",
         readmore: "Lees toelichting.",
       },
       {
         number: "18/20",
-        memeImage: "assets/img/memes/meme18.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question:
           "Milieuvervuilende bedrijven moeten betalen voor de schade die ze veroorzaken",
         readmore: "Lees toelichting.",
       },
       {
         number: "19/20",
-        memeImage: "assets/img/memes/meme19.jpg",
+        memeImage: "assets/img/memes/mem2.png",
         question:
           "Overheidsinstanties mogen etniciteit niet gebruiken om fraude te bestrijden",
         readmore: "Lees toelichting.",
       },
       {
         number: "20/20",
-        memeImage: "assets/img/memes/meme20.jpg",
+        memeImage: "assets/img/memes/mem1.png",
         question: "De overheid moet een Nationale Jeugdstrategie ontwikkelen",
         readmore: "Lees toelichting.",
       },
@@ -305,8 +305,6 @@ class Carousel {
       readmoreLink.href = "#";
       readmoreLink.textContent = cardData.readmore;
       readmoreDiv.appendChild(readmoreLink);
-      const hrElement = document.createElement("hr");
-      readmoreDiv.appendChild(hrElement);
       card.appendChild(readmoreDiv);
 
       const buttonContainer = document.createElement("div");

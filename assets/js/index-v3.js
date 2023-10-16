@@ -1,6 +1,15 @@
 const modal = document.getElementById("bottomModal");
 const openModalButton = document.getElementById("openModal");
 const closeModalButton = document.getElementById("closeModal");
+const desktopToQuestions = document.getElementById("desktopToQuestions");
+const mobileToQuestions = document.getElementById("mobileToQuestions");
+
+desktopToQuestions.addEventListener("click", () => {
+  window.location.href = "cards.html";
+});
+mobileToQuestions.addEventListener("click", () => {
+  window.location.href = "cards.html";
+});
 
 // Function to open the modal
 function openModal() {
@@ -33,7 +42,7 @@ window.addEventListener("click", (event) => {
   }
 });
 
-// Check if the screen width is below a certain value (e.g., 768px) to determine if it's a mobile device
+// Function to check if it's a mobile device
 function isMobile() {
   return window.innerWidth <= 768;
 }
