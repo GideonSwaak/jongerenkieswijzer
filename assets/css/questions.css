@@ -25,6 +25,63 @@ ion-icon {
   font-size: 10vw;
 }
 
+/* Modal container */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(16, 16, 16);
+  padding: 2vw;
+  font-size: 1.2vw;
+  border-radius: 0.6vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 40%; /* Adjust to your preference */
+  border: 0.1vw solid #535353;
+}
+
+/* Close button (optional) */
+.close-button {
+  position: absolute;
+  top: 0.4vw;
+  right: 0.4vw;
+  cursor: pointer;
+  font-size: 2vw;
+  width: 2vw;
+  color: #000;
+  background-color: #fffc61;
+  border: 0.1vw solid #fffc61;
+  text-align: center;
+  border-radius: 0.3vw;
+}
+
+/* Style the "readmore" link (customize as needed) */
+.readmore-link {
+  color: blue;
+  cursor: pointer;
+}
+
+/* Add more styles as needed for your cards, buttons, etc. */
+.card {
+  /* Your card styles */
+}
+
+.modal-text {
+  color: #fff;
+}
+
 #board {
   width: 100vw;
   height: 100vh;
@@ -41,6 +98,7 @@ ion-icon {
   width: 26vw;
   height: 14.2vw;
   border-radius: 1vw;
+  pointer-events: none;
 }
 
 .stelling-vraag {
@@ -358,5 +416,34 @@ ion-icon {
     background-color: #000;
     color: #fff;
     border: 0.2vw solid #fffc61;
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.1vw solid #535353;
+    background-color: rgb(16, 16, 16);
+    padding: 8vw;
+    width: 85vw;
+    font-size: 4.7vw;
+    border-radius: 2.5vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%; /* Adjust to your preference */
+  }
+  /* Close button (optional) */
+  .close-button {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    cursor: pointer;
+    font-size: 7vw;
+    width: 7vw;
+    color: #000;
+    background-color: #fffc61;
+    border: 0.1vw solid #fffc61;
+    text-align: center;
+    border-radius: 1.2vw;
   }
 }

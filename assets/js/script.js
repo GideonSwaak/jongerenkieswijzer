@@ -11,6 +11,8 @@ class Carousel {
         question:
           "Het bindend studieadvies moet voor alle opleidingen (MBO, HBO, WO) worden afgeschaft",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Het bindend studie advies (BSA) bepaalt het minimumaantal studiepunten dat moet worden gehaald voor eerstejaars studenten. Nu kunnen studenten van de opleiding worden gestuurd bij onvoldoende studiepunten. Als het advies niet meer bindend is, ligt de keuze om door te gaan met een studie bij de student.",
       },
       {
         number: "2/20",
@@ -18,24 +20,32 @@ class Carousel {
         question:
           "Organisaties moeten verplicht worden om stagevergoeding te betalen",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Studenten krijgen op dit moment niet altijd betaald voor hun stage, omdat werkgevers wettelijk niet verplicht zijn om een stagevergoeding te geven.",
       },
       {
         number: "3/20",
         memeImage: "assets/img/memes/mem2.png",
         question: "Het minimumloon moet gelden vanaf 18 jaar",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Voor de wet ben je vanaf je 18e volwassen. Toch heb je pas recht op het minimumloon vanaf 21 jaar. Hier wordt al jarenlang over gediscussieerd. Op dit moment is het wettelijk mogelijk om jongeren tot hun 21ste onder het minimumloon te laten werken.",
       },
       {
         number: "4/20",
         memeImage: "assets/img/memes/mem1.png",
         question: "Er moet regelgeving komen voor buy now, pay later diensten",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Veel webwinkels bieden de mogelijkheid om aankopen later in één keer of in drie termijnen te betalen (buy now, pay later). Dit lijkt relaxt maar door het gebrek aan informatie krijgen veel mensen onnodige boetes doordat ze te laat betalen waardoor schulden snel oplopen.",
       },
       {
         number: "5/20",
         memeImage: "assets/img/memes/mem2.png",
         question: "Keti Koti moet een nationale vrije dag worden",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Op 1 juli is het Keti Koti/Dia di Abolishon. Dit is de dag dat de afschaffing van de slavernij in 1863 in Suriname en de voormalig Nederlandse Antillen wordt herdacht en de vrijheid wordt gevierd.",
       },
       {
         number: "6/20",
@@ -43,18 +53,24 @@ class Carousel {
         question:
           "De leeftijdsgrens van 18 jaar in de jeugdzorg moet worden versoepeld",
         readmore: "Lees toelichting.",
+        toelichting:
+          "In de Jeugdwet staat dat jongeren tot 18 jaar jeugdhulp kunnen krijgen. Jeugdzorg bij uithuisgeplaatste kinderen houdt nu op als een kind 18 jaar wordt. Versoepeling zorgt voor passende zorg en begeleiding in plaats van een kunstmatige breuk. De leeftijdsgrens voor pleegzorg is al opgerekt naar 21 jaar.",
       },
       {
         number: "7/20",
         memeImage: "assets/img/memes/mem2.png",
         question: "Er moet accijns komen op vapen",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Op dit moment worden e-sigaretten nog anders behandeld dan tabak. Zo is het op meer plekken toegestaan om e-sigaretten te roken (vapen) en zijn deze goedkoper dan tabak omdat er geen verbruiksbelasting (accijns) op zit.",
       },
       {
         number: "8/20",
         memeImage: "assets/img/memes/mem1.png",
         question: "Het openbaar vervoer moet gratis worden",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Het Nederlandse openbaar vervoer hoort bij de duurste ter wereld. In Nederland dekken subsidies ongeveer de helft van de kosten van het openbaar vervoer. De overige kosten betalen reizigers zelf.",
       },
       {
         number: "9/20",
@@ -62,6 +78,8 @@ class Carousel {
         question:
           "De landelijke overheid moet zorgen voor meer subsidie voor openbaar streekvervoer",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Aanbieders van streekvervoer zoals bussen, trams en metro’s hebben in sommige regio’s moeite om het vervoer te bieden. Het netwerk aan vervoer hangt voor een groot deel af van subsidies.",
       },
       {
         number: "10/20",
@@ -69,72 +87,90 @@ class Carousel {
         question:
           "Nederland moet streven om zo snel mogelijk klimaatneutraal te zijn",
         readmore: "Lees toelichting.",
+        toelichting:
+          "In het klimaatakkoord van Parijs staat dat we in 2030 een CO2-reductie van 55% moeten behalen ten opzichte van 1990. Het doel is om in 2050 klimaatneutraal te zijn. Sommige partijen vinden dit niet haalbaar, terwijl andere partijen vinden dat Nederland dit doel al eerder moet bereiken.",
       },
       {
         number: "11/20",
         memeImage: "assets/img/memes/mem2.png",
         question: "Stemrecht van jongeren moet verlaagd worden naar 16 jaar",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Jongeren kunnen pas vanaf 18 jaar stemmen, door de wet aan te passen kunnen jongeren al vanaf 16 jaar gaan stemmen.",
       },
       {
         number: "12/20",
         memeImage: "assets/img/memes/mem1.png",
-        question:
-          "Het eigen risico moet voor jongeren tot en met 23 jaar worden afgeschaft",
+        question: "Nederland moet de dienstplicht opnieuw invoeren",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Nederland kent sinds 1996 geen dienstplicht meer. Met een eventuele herinvoering van de dienstplicht kunnen jongens en meisjes tussen de 17 en 27 jaar worden opgeroepen voor militaire dienst. Tegenstanders vinden dit niet meer van deze tijd, terwijl voorstanders het nuttig vinden voor sociale samenhang en discipline.",
       },
       {
         number: "13/20",
         memeImage: "assets/img/memes/mem2.png",
-        question:
-          "De overheid moet meer investeren in sportieve, culturele en artistieke activiteiten voor jongeren",
+        question: "De overheid moet voedselverspilling actiever tegengaan",
         readmore: "Lees toelichting.",
+        toelichting:
+          "In Nederland wordt jaarlijks veel voedsel weggegooid. Dit gebeurt in huishoudens, supermarkten en horeca. Er zijn initiatieven om voedselverspilling tegen te gaan, maar de vraag is of de overheid hier een actievere rol in moet spelen.",
       },
       {
         number: "14/20",
         memeImage: "assets/img/memes/mem1.png",
-        question: "Er moet een generatietoets komen",
+        question: "Nederland moet een bindend referendum invoeren",
         readmore: "Lees toelichting.",
+        toelichting:
+          "In Nederland bestaat al de mogelijkheid voor een raadgevend referendum. Een bindend referendum zou betekenen dat de regering zich verplicht moet houden aan de uitslag van het referendum.",
       },
       {
         number: "15/20",
         memeImage: "assets/img/memes/mem2.png",
-        question:
-          "Jongeren die onder het leenstelsel hebben gestudeerd moeten meer worden gecompenseerd voor de opgebouwde studieschuld",
+        question: "Er moet meer geld naar kunst en cultuur",
         readmore: "Lees toelichting.",
+        toelichting:
+          "De afgelopen jaren is er flink bezuinigd op kunst en cultuur. Dit heeft geleid tot discussie over de waarde en financiering van de culturele sector. Sommige partijen vinden dat er juist meer geïnvesteerd moet worden in kunst en cultuur.",
       },
       {
         number: "16/20",
         memeImage: "assets/img/memes/mem1.png",
-        question:
-          "Studentenkamers moeten ook in aanmerking kunnen komen voor huurtoeslag",
+        question: "De AOW-leeftijd moet worden verlaagd",
         readmore: "Lees toelichting.",
+        toelichting:
+          "De AOW-leeftijd is gekoppeld aan de levensverwachting en stijgt daardoor. De discussie gaat over het tempo van deze stijging en de gewenste AOW-leeftijd. Voorstanders willen de leeftijd koppelen aan de gemiddelde levensverwachting.",
       },
       {
         number: "17/20",
         memeImage: "assets/img/memes/mem2.png",
-        question: "Huurprijzen in de vrije sector moeten worden vastgesteld",
+        question: "Nederland moet het koningshuis afschaffen",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Nederland is een constitutionele monarchie. Er is discussie over het nut en de kosten van het koningshuis. Sommigen willen het koningshuis behouden, terwijl anderen pleiten voor afschaffing.",
       },
       {
         number: "18/20",
         memeImage: "assets/img/memes/mem1.png",
         question:
-          "Milieuvervuilende bedrijven moeten betalen voor de schade die ze veroorzaken",
+          "Het vak geschiedenis moet verplicht zijn op middelbare scholen",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Niet alle middelbare scholen in Nederland verplichten het vak geschiedenis. Dit leidt tot discussie over de waarde van het vak en het behoud van historisch besef bij leerlingen.",
       },
       {
         number: "19/20",
         memeImage: "assets/img/memes/mem2.png",
-        question:
-          "Overheidsinstanties mogen etniciteit niet gebruiken om fraude te bestrijden",
+        question: "De Nederlandse politie moet etnisch profileren tegen gaan",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Etnisch profileren betekent dat de politie mensen staande houdt of controleert op basis van hun huidskleur, afkomst, religie of andere etnische kenmerken. Dit is controversieel en roept discussie op over discriminatie en gelijke behandeling door de politie.",
       },
       {
         number: "20/20",
         memeImage: "assets/img/memes/mem1.png",
-        question: "De overheid moet een Nationale Jeugdstrategie ontwikkelen",
+        question:
+          "Ouders moeten verplicht worden om hun kinderen te laten vaccineren",
         readmore: "Lees toelichting.",
+        toelichting:
+          "Vaccinaties zijn belangrijk om de volksgezondheid te beschermen. Er zijn ouders die ervoor kiezen om hun kinderen niet te laten vaccineren. Dit roept vragen op over de verplichting van vaccinaties.",
       },
     ];
 
@@ -142,10 +178,32 @@ class Carousel {
     this.push();
     this.handle();
   }
+
+  isClickingReadmore(e) {
+    const target = e.target;
+    if (
+      target.classList.contains("readmore-link") ||
+      target.parentElement.classList.contains("readmore-link")
+    ) {
+      return true;
+    }
+    return false;
+  }
   handle() {
     this.cards = this.board.querySelectorAll(".card");
     this.topCard = this.cards[this.cards.length - 1];
     this.nextCard = this.cards[this.cards.length - 2];
+
+    this.topCard.addEventListener("click", (e) => {
+      if (this.isClickingReadmore(e)) {
+        e.preventDefault();
+        const modalId = e.target.getAttribute("data-modal");
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.style.display = "block";
+        }
+      }
+    });
 
     if (this.cards.length > 0) {
       this.topCard.style.transform =
@@ -163,7 +221,9 @@ class Carousel {
       );
 
       this.hammer.on("tap", (e) => {
-        this.onTap(e);
+        if (!this.isClickingReadmore(e)) {
+          this.onTap(e);
+        }
       });
       this.hammer.on("pan", (e) => {
         this.onPan(e);
@@ -257,6 +317,39 @@ class Carousel {
       let card = document.createElement("div");
       card.classList.add("card");
 
+      let modalContainer = document.querySelector("#modal-container");
+      if (!modalContainer) {
+        modalContainer = document.createElement("div");
+        modalContainer.id = "modal-container";
+        document.body.appendChild(modalContainer);
+      }
+
+      const modal = document.createElement("div");
+      modal.classList.add("modal");
+      modal.id = `modal-${this.cardNumber}`;
+      modal.style.display = "none"; // Hide the modal by default
+      modal.innerHTML = `
+        <div class="modal-content">
+          <span class="close-button" data-modal="modal-${this.cardNumber}">&times;</span>
+          <p class="modal-text">${cardData.toelichting}</p>
+        </div>
+      `;
+
+      // Inside your `push()` method, add an event listener for the close button
+      const closeButtons = modal.getElementsByClassName("close-button");
+      for (const closeButton of closeButtons) {
+        closeButton.addEventListener("click", () => {
+          const modalId = closeButton.getAttribute("data-modal");
+          const modal = document.getElementById(modalId);
+          if (modal) {
+            modal.style.display = "none";
+          }
+        });
+      }
+
+      // Append the modal to the modal container
+      modalContainer.appendChild(modal);
+
       const cardTop = document.createElement("div");
       cardTop.classList.add("card-top");
 
@@ -264,7 +357,7 @@ class Carousel {
       cardLabel.classList.add("card-label");
       cardLabel.textContent = cardData.number;
 
-      const shareIcon = document.createElement("div"); // Change from swipeIcon to shareIcon
+      const shareIcon = document.createElement("div");
       shareIcon.classList.add("share-icon");
 
       const materialSpan = document.createElement("span");
@@ -297,18 +390,21 @@ class Carousel {
       const readmoreLink = document.createElement("a");
       readmoreLink.href = "#";
       readmoreLink.textContent = cardData.readmore;
+      readmoreLink.setAttribute("data-modal", `modal-${this.cardNumber}`);
+      // Inside the push method
+      readmoreLink.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent the default link behavior
+        console.log("ff");
+      });
       readmoreDiv.appendChild(readmoreLink);
       card.appendChild(readmoreDiv);
 
       const buttonContainer = document.createElement("div");
       buttonContainer.classList.add("card-button-container");
 
-      const previousButton = document.createElement("button"); // New previous-button button
+      const previousButton = document.createElement("button");
       previousButton.classList.add("previous-button");
       previousButton.innerHTML = '<i class="fa-solid fa-angles-left"></i>';
-      previousButton.addEventListener("click", () => {
-        this.swipeLeft();
-      });
       buttonContainer.appendChild(previousButton);
 
       const thumbsDownButton = document.createElement("button");
@@ -332,7 +428,7 @@ class Carousel {
       });
       buttonContainer.appendChild(thumbsUpButton);
 
-      const nextButton = document.createElement("button"); // New next-button button
+      const nextButton = document.createElement("button");
       nextButton.classList.add("next-button");
       nextButton.innerHTML = '<i class="fa-solid fa-angles-right"></i>';
       buttonContainer.appendChild(nextButton);
