@@ -1,0 +1,444 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo Black";
+  background: #000;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+.upper-half {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.text-wrapper {
+  font-size: 5vw;
+  color: #fffc61;
+  position: relative;
+}
+
+.front-mobile-list {
+  list-style-type: none;
+  display: none;
+  list-style: none; /* Removes default list bullets */
+}
+
+.front-text::before {
+  content: "Jongerenkieswijzer 2023";
+  position: absolute;
+  color: #fffc6181;
+  top: -0.4vw;
+  left: 0vw;
+  z-index: -1; /* Place it behind .front-text */
+}
+
+.index-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.index-buttons button {
+  font-family: "Archivo Black";
+  border-radius: 0.3vw;
+  padding: 0.6vw;
+  font-size: 1.4vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0.3vw 10px;
+}
+
+.index-buttons button:hover {
+  scale: 1.1;
+  transition: 0.3s;
+}
+
+.index-buttons button:active {
+  scale: 0.8;
+  transition: 0.3s;
+}
+
+.index-buttons-mobile {
+  display: none;
+  grid-template-columns: 1fr;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.index-buttons-mobile-smaller-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.index-buttons-mobile-smaller-buttons button {
+  font-family: "Archivo Black";
+  border-radius: 0.2vw;
+  padding: 3.5vw;
+  font-size: 4.5vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+  width: 42vw;
+  border-radius: 1.5vw;
+}
+
+.index-buttons-mobile-large-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-buttons-mobile-large-button button {
+  font-family: "Archivo Black";
+  border-radius: 0.2vw;
+  padding: 3.5vw;
+  font-size: 4.5vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+  width: 90vw;
+  border-radius: 1.5vw;
+}
+
+.button-start {
+  background: #fffc61;
+  border: 2px solid #fffc61;
+  color: #000;
+}
+
+.button-overons {
+  background: #000;
+  color: #fffc61;
+  border: 2px solid #fffc61;
+}
+
+.button-knop {
+  background: #000;
+  border: 2px solid #fffc61;
+  color: #fffc61;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed; /* Change from 'absolute' to 'fixed' */
+  bottom: 0;
+  left: 0;
+  height: 3.5vw;
+  width: 100vw;
+  z-index: 1; /* Add a higher z-index */
+}
+
+/* Style the modal and hide it by default */
+.modal {
+  font-family: "Montserrat";
+  display: none;
+  position: fixed;
+  bottom: 0; /* Keeps it at the top of the viewport */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 40vw; /* Full viewport width */
+  height: 0;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border-left: 2px solid #fffc61;
+  border-right: 2px solid #fffc61;
+  border-top: 2px solid #fffc61;
+  border-radius: 1vw 1vw 0 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  transition: height 0.3s ease-in-out;
+  overflow-y: hidden;
+}
+
+.modal-content {
+  text-align: center;
+  padding: 1vw; /* Adjust padding based on viewport width */
+  font-size: 1vw;
+}
+
+.modal-content p {
+  font-weight: 700;
+  font-size: 1.1vw;
+}
+
+#closeModal {
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+  background-color: #333;
+  color: #fffc61;
+  border: none;
+  border-radius: 0.2vw;
+  padding: 0.2vw 0.5vw;
+  font-size: 1.4vw;
+  cursor: pointer;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #393939;
+  height: 4vw;
+  border-radius: 0.5vw;
+}
+
+.footer-links {
+  margin-top: 1vw;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-links a:nth-child(1):after {
+  content: " -";
+}
+
+.footer-credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff23;
+  color: #fff;
+  width: 4.5vw;
+  text-align: center;
+  font-size: 1.8vw;
+  border-radius: 0.5vw 0.5vw 0px 0px;
+  cursor: pointer;
+}
+
+.footer-credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff23;
+  color: #fff;
+  width: 4.5vw;
+  text-align: center;
+  font-size: 1.8vw;
+  border-radius: 0.5vw 0.5vw 0px 0px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 630px) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .modal {
+    width: 80vw;
+    border-radius: 1.7vw 1.7vw 0 0;
+  }
+
+  .modal-content p {
+    font-size: 4vw;
+  }
+  #closeModal {
+    font-size: 4vw;
+  }
+  .slider {
+    font-size: 4vw;
+    padding: 2vw;
+  }
+  .footer-links {
+    margin-top: 3vw;
+    font-size: 4vw;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Change from 'absolute' to 'fixed' */
+    bottom: 0;
+    left: 0;
+    height: 12.5vw;
+    width: 100vw;
+    z-index: 999; /* Add a higher z-index */
+  }
+
+  .footer-credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff23;
+    color: #fff;
+    width: 14.5vw;
+    text-align: center;
+    font-size: 8vw;
+    border-radius: 2.5vw 2.5vw 0px 0px;
+    cursor: pointer;
+  }
+  .index-buttons {
+    display: none;
+  }
+
+  .index-buttons-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .upper-half {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    width: 90px;
+  }
+
+  .front-text {
+    display: none;
+  }
+
+  .front-mobile-list-container {
+    margin-left: 5vw;
+  }
+
+  .front-mobile-list {
+    display: contents;
+    font-size: 13vw;
+    line-height: 1.1;
+  }
+  .front-mobile-list li:nth-child(1):before {
+    content: "Jongeren";
+    position: absolute;
+    color: #fffc6181;
+    top: -1vw;
+    left: 6.2vw;
+    z-index: -1; /* Place it behind .front-text */
+  }
+  .front-mobile-list li:nth-child(2):before {
+    content: "kieswijzer";
+    position: absolute;
+    color: #fffc6181;
+    top: 13.5vw;
+    left: 6.2vw;
+    z-index: -1; /* Place it behind .front-text */
+  }
+  .front-mobile-list li:nth-child(3):before {
+    content: "2023";
+    position: absolute;
+    color: #fffc6181;
+    top: 28vw;
+    left: 6.2vw;
+    z-index: -1; /* Place it behind .front-text */
+  }
+
+  .button-start {
+    background: #fffc61;
+    border: 2px solid #fffc61;
+    color: #000;
+  }
+
+  .button-overons {
+    background: #000;
+    color: #fffc61;
+    border: 2px solid #fffc61;
+  }
+
+  .button-knop {
+    background: #000;
+    color: #fffc61;
+    border: 2px solid #fffc61;
+  }
+}
+
+/* .topleft-line:after {
+  content: "";
+  border-top: 1px solid #fffc61;
+  width: 4vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(40deg);
+  transform-origin: top left;
+}
+
+.bottomleft-line:after {
+  content: "";
+  border-top: 1px solid #fffc61;
+  width: 4vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(-40deg);
+  transform-origin: bottom left;
+}
+
+.topright-line:after {
+  content: "";
+  border-top: 1px solid #fffc61;
+  width: 4vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(-40deg);
+  transform-origin: top right;
+}
+
+.bottomright-line:after {
+  content: "";
+  border-top: 1px solid #fffc61;
+  width: 4vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(40deg);
+  transform-origin: bottom right;
+}
+
+.top-line:after {
+  content: "";
+  border-top: 1px solid #fffc61;
+  width: 7vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(40deg);
+  transform-origin: bottom right;
+} */
+/* .upper-half {
+  display: flex;
+  width: 100%;
+  position: relative;
+  font-size: 5vw;
+  font-weight: bold;
+  color: #fffc61;
+  position: relative;
+  overflow: hidden;
+  align-items: flex-end; /* Align the text to the bottom */
+/* justify-content: center;  */
+/* } */
+
+/* .text-container {
+  display: flex;
+  align-self: end;
+  font-size: 5vw;
+  font-weight: bold;
+  color: #fffc61;
+}
+
+.text-behind {
+    display: flex;
+    align-self: end;
+  position: absolute;
+  top: -0.3vw;
+  width: 100%;
+  font-size: 5vw;
+  color: rgba(255, 252, 97, 0.3);
+  z-index: -1;
+}  */

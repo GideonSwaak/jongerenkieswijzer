@@ -6,132 +6,134 @@ class Carousel {
 
     this.cardData = [
       {
-        number: "Stelling 1",
+        number: "1/20",
         memeImage: "/assets/img/memes/meme1.png",
         question:
-          "Het bindend studieadvies moet voor alle opleidingen (MBO, HBO, WO) worden afgeschaft.",
+          "Het bindend studieadvies moet voor alle opleidingen (MBO, HBO, WO) worden afgeschaft",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 2",
+        number: "2/20",
         memeImage: "assets/img/memes/meme2.jpg",
-        question: "What do you call a bear with no teeth? A gummy bear!",
+        question:
+          "Organisaties moeten verplicht worden om stagevergoeding te betalen",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 3",
+        number: "3/20",
         memeImage: "assets/img/memes/meme3.jpg",
-        question:
-          "Why don't skeletons fight each other? They don't have the guts!",
+        question: "Het minimumloon moet gelden vanaf 18 jaar",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 4",
+        number: "4/20",
         memeImage: "assets/img/memes/meme4.jpg",
-        question:
-          "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        question: "Er moet regelgeving komen voor buy now, pay later diensten",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 5",
+        number: "5/20",
         memeImage: "assets/img/memes/meme5.jpg",
-        question: "How do you organize a space party? You planet!",
+        question: "Keti Koti moet een nationale vrije dag worden",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 6",
+        number: "6/20",
         memeImage: "assets/img/memes/meme6.jpg",
-        question: "Why did the bicycle fall over? Because it was two-tired!",
+        question:
+          "De leeftijdsgrens van 18 jaar in de jeugdzorg moet worden versoepeld",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 7",
+        number: "7/20",
         memeImage: "assets/img/memes/meme7.jpg",
-        question: "What do you call a fish with no eyes? Fsh!",
+        question: "Er moet accijns komen op vapen",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 8",
+        number: "8/20",
         memeImage: "assets/img/memes/meme8.jpg",
-        question: "Why don't eggs tell jokes? Because they might crack up!",
+        question: "Het openbaar vervoer moet gratis worden",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 9",
+        number: "9/20",
         memeImage: "assets/img/memes/meme9.jpg",
         question:
-          "What do you call a snowman with a six-pack? An abdominal snowman!",
+          "De landelijke overheid moet zorgen voor meer subsidie voor openbaar streekvervoer",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 10",
+        number: "10/20",
         memeImage: "assets/img/memes/meme10.jpg",
         question:
-          "Why did the tomato turn red? Because it saw the salad dressing!",
+          "Nederland moet streven om zo snel mogelijk klimaatneutraal te zijn",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 11",
+        number: "11/20",
         memeImage: "assets/img/memes/meme11.jpg",
-        question:
-          "How do you catch a squirrel? Climb a tree and act like a nut!",
+        question: "Stemrecht van jongeren moet verlaagd worden naar 16 jaar",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 12",
+        number: "12/20",
         memeImage: "assets/img/memes/meme12.jpg",
         question:
-          "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+          "Het eigen risico moet voor jongeren tot en met 23 jaar worden afgeschaft",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 13",
+        number: "13/20",
         memeImage: "assets/img/memes/meme13.jpg",
-        question: "What do you call a bear with no ears? B!",
-        readmore: "Lees toelichting.",
-      },
-      {
-        number: "Stelling 14",
-        memeImage: "assets/img/memes/meme14.jpg",
         question:
-          "Why don't skeletons fight each other? They don't have the guts!",
+          "De overheid moet meer investeren in sportieve, culturele en artistieke activiteiten voor jongeren",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 15",
+        number: "14/20",
+        memeImage: "assets/img/memes/meme14.jpg",
+        question: "Er moet een generatietoets komen",
+        readmore: "Lees toelichting.",
+      },
+      {
+        number: "15/20",
         memeImage: "assets/img/memes/meme15.jpg",
-        question: "What do you call a fake noodle? An impasta!",
+        question:
+          "Jongeren die onder het leenstelsel hebben gestudeerd moeten meer worden gecompenseerd voor de opgebouwde studieschuld",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 16",
+        number: "16/20",
         memeImage: "assets/img/memes/meme16.jpg",
         question:
-          "Why did the scarecrow win an award? Because he was outstanding in his field!",
+          "Studentenkamers moeten ook in aanmerking kunnen komen voor huurtoeslag",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 17",
+        number: "17/20",
         memeImage: "assets/img/memes/meme17.jpg",
-        question: "How do you organize a space party? You planet!",
+        question: "Huurprijzen in de vrije sector moeten worden vastgesteld",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 18",
+        number: "18/20",
         memeImage: "assets/img/memes/meme18.jpg",
-        question: "Why did the bicycle fall over? Because it was two-tired!",
+        question:
+          "Milieuvervuilende bedrijven moeten betalen voor de schade die ze veroorzaken",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 19",
+        number: "19/20",
         memeImage: "assets/img/memes/meme19.jpg",
-        question: "What do you call a fish with no eyes? Fsh!",
+        question:
+          "Overheidsinstanties mogen etniciteit niet gebruiken om fraude te bestrijden",
         readmore: "Lees toelichting.",
       },
       {
-        number: "Stelling 20",
+        number: "20/20",
         memeImage: "assets/img/memes/meme20.jpg",
-        question: "Why don't eggs tell jokes? Because they might crack up!",
+        question: "De overheid moet een Nationale Jeugdstrategie ontwikkelen",
         readmore: "Lees toelichting.",
       },
     ];
@@ -255,10 +257,33 @@ class Carousel {
       let card = document.createElement("div");
       card.classList.add("card");
 
+      // Create card-top container
+      const cardTop = document.createElement("div");
+      cardTop.classList.add("card-top");
+
+      // Create card-label div and set its text content
       const cardLabel = document.createElement("div");
       cardLabel.classList.add("card-label");
       cardLabel.textContent = cardData.number;
-      card.appendChild(cardLabel);
+
+      // Create swipe-icon div
+      const swipeIcon = document.createElement("div");
+      swipeIcon.classList.add("swipe-icon");
+
+      // Create the span element for the material-symbols-outlined
+      const materialSpan = document.createElement("span");
+      materialSpan.classList.add("material-symbols-outlined");
+      materialSpan.textContent = "swipe";
+
+      // Append the span element to the swipe-icon div
+      swipeIcon.appendChild(materialSpan);
+
+      // Append cardLabel and swipeIcon to card-top container
+      cardTop.appendChild(cardLabel);
+      cardTop.appendChild(swipeIcon);
+
+      // Append card-top container to the card
+      card.appendChild(cardTop);
 
       const imageWrapper = document.createElement("div");
       imageWrapper.classList.add("image-wrapper");

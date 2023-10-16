@@ -4,8 +4,9 @@
 }
 
 body {
-  background: radial-gradient(circle at 100% 0%, #9b8f20 0%, transparent 70%),
-    #000;
+  background: radial-gradient(circle at 100% 0%, #000 0%, transparent 70%), #000;
+  /* background: radial-gradient(circle at 100% 0%, #000 0%, transparent 70%),
+  #000 url(/assets/img/thumbs.svg) 0 30%; */
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -19,6 +20,11 @@ section {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+ion-icon {
+  color: #ffffff28;
+  font-size: 10vw;
 }
 
 #board {
@@ -47,14 +53,6 @@ section {
   padding: 20px;
 }
 
-.card-label {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  text-align: left;
-  padding: 20px;
-}
-
 .readmore-link {
   text-align: center;
 }
@@ -73,13 +71,13 @@ section {
 }
 
 .card {
-  width: 430px;
+  width: 430vw;
   height: 508px;
   position: absolute;
   top: 50%;
   left: 50%;
   border-radius: 12px;
-  box-shadow: 0 0 10px 1px #3f3f3f;
+  border: 2px solid #fffc61;
   background-color: #000;
   color: #fff;
   transform: translateX(-46%) translateY(-54%) translateZ(0) rotateY(0deg); /* Apply a 3D transform */
@@ -92,10 +90,68 @@ section {
 .card:nth-child(even) {
   transform: translateX(-90%) translateY(-50%) translateZ(-20px) rotateY(0deg); /* Shift even cards back on the Z-axis */
 }
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.swipe-icon {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.221);
+  width: 65px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.card-label {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.221);
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.card-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-button-container button {
+  padding: 16px 19px;
+  font-size: 30px;
+  margin: 0px 8px;
+  border: none;
+  border-radius: 50%;
+}
+
+.card-button-container button:nth-child(odd) {
+  background-color: #fffc61;
+  color: #000;
+}
+
+.card-button-container button:nth-child(even) {
+  background-color: #000;
+  border: 2px solid #fffc61;
+  color: #fff;
+}
+
 @media screen and (max-width: 718px) {
   body {
-    background: radial-gradient(circle at 100% 20%, #9b8f20 0%, transparent 70%),
-      #000 url(/assets/img/222-ipad.svg) 0 30%;
+    background: radial-gradient(circle at 100% 20%, #000000 0%, transparent 70%),
+      #000;
     background-size: cover;
     background-repeat: no-repeat; /* Prevents the background from repeating */
     margin: 0;
@@ -141,8 +197,8 @@ section {
 
 @media screen and (max-width: 600px) {
   body {
-    background: radial-gradient(circle at 100% 20%, #9b8f20 0%, transparent 70%),
-      #000 url(/assets/img/222-600px.svg) 0 30%;
+    background: radial-gradient(circle at 100% 20%, #000000 0%, transparent 70%),
+      #000;
     background-size: cover;
     background-repeat: no-repeat; /* Prevents the background from repeating */
     margin: 0;
@@ -155,8 +211,8 @@ section {
 
 @media screen and (max-width: 500px) {
   body {
-    background: radial-gradient(circle at 100% 20%, #9b8f20 0%, transparent 70%),
-      #000 url(/assets/img/222-mobil.svg) 0 30%;
+    background: radial-gradient(circle at 100% 20%, #000000 0%, transparent 70%),
+      #000;
     background-size: cover;
     background-repeat: no-repeat; /* Prevents the background from repeating */
     margin: 0;
