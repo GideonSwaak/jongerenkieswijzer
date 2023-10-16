@@ -29,7 +29,7 @@ ion-icon {
   width: 100vw;
   height: 100vh;
   position: relative;
-  perspective: 100vw; /* Adjusted for vw units */
+  perspective: 100vw;
 }
 
 .image-wrapper {
@@ -38,18 +38,18 @@ ion-icon {
 }
 
 .meme-img {
-  width: 29.5vw; /* Adjusted for vw units */
-  height: 17.2vw; /* Adjusted for vw units */
-  border-radius: 1vw; /* Adjusted for vw units */
+  width: 29.5vw;
+  height: 17.2vw;
+  border-radius: 1vw;
 }
 
 .stelling-vraag {
-  font-size: 1.4vw; /* Adjusted for vw units */
+  font-size: 1.4vw;
   font-weight: 300;
   color: #fff;
   text-align: center;
-  padding: 1.9vw; /* Adjusted for vw units */
-  overflow: hidden; /* Add this property to hide overflowing content */
+  padding: 1.9vw;
+  overflow: hidden;
 }
 
 .readmore-link {
@@ -78,12 +78,12 @@ ion-icon {
 }
 
 .card {
-  width: 32vw; /* Adjusted for vw units */
-  height: 45.8vw; /* Adjusted for vw units */
+  width: 32vw;
+  height: 45.8vw;
   position: absolute;
   top: 50%;
   left: 50%;
-  border-radius: 1.6vw; /* Adjusted for vw units */
+  border-radius: 1.6vw;
   border: 0.2vw solid #fffc61;
   background-color: #000;
   color: #fff;
@@ -95,14 +95,14 @@ ion-icon {
 }
 
 .card:nth-child(even) {
-  transform: translateX(-90%) translateY(-50%) translateZ(-2vw) rotateY(0deg); /* Adjusted for vw units */
+  transform: translateX(-90%) translateY(-50%) translateZ(-2vw) rotateY(0deg);
 }
 
 .card-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.3vw; /* Adjusted for vw units */
+  padding: 1.3vw;
   align-items: center;
 }
 
@@ -111,9 +111,9 @@ ion-icon {
   place-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.221);
-  width: 3.5vw; /* Adjusted for vw units */
-  height: 2.5vw; /* Adjusted for vw units */
-  border-radius: 0.5vw; /* Adjusted for vw units */
+  width: 3.5vw;
+  height: 2.5vw;
+  border-radius: 0.5vw;
 }
 
 .swipe-icon span {
@@ -124,13 +124,13 @@ ion-icon {
   display: flex;
   place-items: center;
   justify-content: center;
-  font-size: 1.3vw; /* Adjusted for vw units */
+  font-size: 1.3vw;
   font-weight: 500;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.221);
-  width: 4.5vw; /* Adjusted for vw units */
-  height: 2.5vw; /* Adjusted for vw units */
-  border-radius: 0.5vw; /* Adjusted for vw units */
+  width: 4.5vw;
+  height: 2.5vw;
+  border-radius: 0.5vw;
 }
 
 .card-button-container {
@@ -141,11 +141,11 @@ ion-icon {
 }
 
 .card-button-container button {
-  padding: 1.3vw 1.5vw; /* Adjusted for vw units */
+  padding: 1.3vw 1.5vw;
   font-size: 2.5vw;
-  margin: 0 0.4vw; /* Adjusted for vw units */
+  margin: 0 0.4vw;
   border: none;
-  border-radius: 5vw; /* Adjusted for vw units */
+  border-radius: 5vw;
 }
 
 .card-button-container button:nth-child(odd) {
@@ -160,30 +160,15 @@ ion-icon {
 }
 
 .card-overlay-red {
-  background-color: rgba(
-    255,
-    0,
-    0,
-    0.6
-  ); /* Red overlay with some transparency */
+  background-color: rgba(255, 0, 0, 0.6);
 }
 
 .card-overlay-grey {
-  background-color: rgba(
-    128,
-    128,
-    128,
-    0.6
-  ); /* Grey overlay with some transparency */
+  background-color: rgba(128, 128, 128, 0.6);
 }
 
 .card-overlay-green {
-  background-color: rgba(
-    0,
-    128,
-    0,
-    0.6
-  ); /* Green overlay with some transparency */
+  background-color: rgba(0, 128, 0, 0.6);
 }
 
 .card-overlay {
@@ -208,24 +193,24 @@ ion-icon {
   }
 
   .card-top {
-    padding: 4.4vw; /* Adjusted for vw units */
+    padding: 4.4vw;
   }
 
   .card-label {
-    font-size: 4vw; /* Adjusted for vw units */
-    width: 14vw; /* Adjusted for vw units */
-    height: 7.5vw; /* Adjusted for vw units */
+    font-size: 4vw;
+    width: 14vw;
+    height: 7.5vw;
     border-radius: 2vw;
   }
 
   .swipe-icon {
-    width: 14vw; /* Adjusted for vw units */
-    height: 7.5vw; /* Adjusted for vw units */
+    width: 14vw;
+    height: 7.5vw;
     border-radius: 2vw;
   }
 
   .swipe-icon span {
-    font-size: 4vw; /* Adjusted for vw units */
+    font-size: 4vw;
   }
 
   .meme-img {
@@ -270,9 +255,9 @@ ion-icon {
   }
 
   .card-button-container button {
-    padding: 4vw 5vw; /* Adjusted for vw units */
+    padding: 4vw 5vw;
     font-size: 8vw;
-    margin: 4vw 2vw; /* Adjusted for vw units */
-    border-radius: 15vw; /* Adjusted for vw units */
+    margin: 4vw 2vw;
+    border-radius: 15vw;
   }
 }

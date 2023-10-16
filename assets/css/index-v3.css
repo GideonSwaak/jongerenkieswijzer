@@ -29,7 +29,7 @@ section {
 .front-mobile-list {
   list-style-type: none;
   display: none;
-  list-style: none; /* Removes default list bullets */
+  list-style: none;
 }
 
 .front-text::before {
@@ -38,7 +38,7 @@ section {
   color: #fffc6181;
   top: -0.4vw;
   left: 0vw;
-  z-index: -1; /* Place it behind .front-text */
+  z-index: -1;
 }
 
 .index-buttons {
@@ -135,23 +135,22 @@ section {
 footer {
   display: flex;
   justify-content: center;
-  position: fixed; /* Change from 'absolute' to 'fixed' */
+  position: fixed;
   bottom: 0;
   left: 0;
   height: 3.5vw;
   width: 100vw;
-  z-index: 1; /* Add a higher z-index */
+  z-index: 1;
 }
 
-/* Style the modal and hide it by default */
 .modal {
   font-family: "Montserrat";
   display: none;
   position: fixed;
-  bottom: 0; /* Keeps it at the top of the viewport */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  width: 40vw; /* Full viewport width */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40vw;
   height: 0;
   background-color: rgb(0, 0, 0);
   color: #fff;
@@ -166,7 +165,7 @@ footer {
 
 .modal-content {
   text-align: center;
-  padding: 1vw; /* Adjust padding based on viewport width */
+  padding: 1vw;
   font-size: 1vw;
 }
 
@@ -263,12 +262,12 @@ footer {
   footer {
     display: flex;
     justify-content: center;
-    position: fixed; /* Change from 'absolute' to 'fixed' */
+    position: fixed;
     bottom: 0;
     left: 0;
     height: 12.5vw;
     width: 100vw;
-    z-index: 999; /* Add a higher z-index */
+    z-index: 999;
   }
 
   .footer-credits {
@@ -319,7 +318,7 @@ footer {
     color: #fffc6181;
     top: -1vw;
     left: 6.2vw;
-    z-index: -1; /* Place it behind .front-text */
+    z-index: -1;
   }
   .front-mobile-list li:nth-child(2):before {
     content: "kieswijzer";
@@ -327,7 +326,7 @@ footer {
     color: #fffc6181;
     top: 13.5vw;
     left: 6.2vw;
-    z-index: -1; /* Place it behind .front-text */
+    z-index: -1;
   }
   .front-mobile-list li:nth-child(3):before {
     content: "2023";
@@ -335,7 +334,7 @@ footer {
     color: #fffc6181;
     top: 28vw;
     left: 6.2vw;
-    z-index: -1; /* Place it behind .front-text */
+    z-index: -1;
   }
 
   .button-start {
@@ -356,89 +355,3 @@ footer {
     border: 2px solid #fffc61;
   }
 }
-
-/* .topleft-line:after {
-  content: "";
-  border-top: 1px solid #fffc61;
-  width: 4vw;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: rotate(40deg);
-  transform-origin: top left;
-}
-
-.bottomleft-line:after {
-  content: "";
-  border-top: 1px solid #fffc61;
-  width: 4vw;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: rotate(-40deg);
-  transform-origin: bottom left;
-}
-
-.topright-line:after {
-  content: "";
-  border-top: 1px solid #fffc61;
-  width: 4vw;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform: rotate(-40deg);
-  transform-origin: top right;
-}
-
-.bottomright-line:after {
-  content: "";
-  border-top: 1px solid #fffc61;
-  width: 4vw;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: rotate(40deg);
-  transform-origin: bottom right;
-}
-
-.top-line:after {
-  content: "";
-  border-top: 1px solid #fffc61;
-  width: 7vw;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: rotate(40deg);
-  transform-origin: bottom right;
-} */
-/* .upper-half {
-  display: flex;
-  width: 100%;
-  position: relative;
-  font-size: 5vw;
-  font-weight: bold;
-  color: #fffc61;
-  position: relative;
-  overflow: hidden;
-  align-items: flex-end; /* Align the text to the bottom */
-/* justify-content: center;  */
-/* } */
-
-/* .text-container {
-  display: flex;
-  align-self: end;
-  font-size: 5vw;
-  font-weight: bold;
-  color: #fffc61;
-}
-
-.text-behind {
-    display: flex;
-    align-self: end;
-  position: absolute;
-  top: -0.3vw;
-  width: 100%;
-  font-size: 5vw;
-  color: rgba(255, 252, 97, 0.3);
-  z-index: -1;
-}  */
