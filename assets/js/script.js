@@ -264,17 +264,17 @@ class Carousel {
       cardLabel.classList.add("card-label");
       cardLabel.textContent = cardData.number;
 
-      const swipeIcon = document.createElement("div");
-      swipeIcon.classList.add("swipe-icon");
+      const shareIcon = document.createElement("div"); // Change from swipeIcon to shareIcon
+      shareIcon.classList.add("share-icon");
 
       const materialSpan = document.createElement("span");
       materialSpan.classList.add("material-symbols-outlined");
-      materialSpan.textContent = "swipe";
+      materialSpan.textContent = "send";
 
-      swipeIcon.appendChild(materialSpan);
+      shareIcon.appendChild(materialSpan);
 
       cardTop.appendChild(cardLabel);
-      cardTop.appendChild(swipeIcon);
+      cardTop.appendChild(shareIcon);
 
       card.appendChild(cardTop);
 
@@ -303,6 +303,14 @@ class Carousel {
       const buttonContainer = document.createElement("div");
       buttonContainer.classList.add("card-button-container");
 
+      const previousButton = document.createElement("button"); // New previous-button button
+      previousButton.classList.add("previous-button");
+      previousButton.innerHTML = '<i class="fa-solid fa-angles-left"></i>';
+      previousButton.addEventListener("click", () => {
+        this.swipeLeft();
+      });
+      buttonContainer.appendChild(previousButton);
+
       const thumbsDownButton = document.createElement("button");
       thumbsDownButton.innerHTML = '<i class="fa-regular fa-thumbs-down"></i>';
       thumbsDownButton.addEventListener("click", () => {
@@ -323,6 +331,11 @@ class Carousel {
         this.swipeRight();
       });
       buttonContainer.appendChild(thumbsUpButton);
+
+      const nextButton = document.createElement("button"); // New next-button button
+      nextButton.classList.add("next-button");
+      nextButton.innerHTML = '<i class="fa-solid fa-angles-right"></i>';
+      buttonContainer.appendChild(nextButton);
 
       card.appendChild(buttonContainer);
 
