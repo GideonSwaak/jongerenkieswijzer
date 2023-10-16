@@ -257,32 +257,25 @@ class Carousel {
       let card = document.createElement("div");
       card.classList.add("card");
 
-      // Create card-top container
       const cardTop = document.createElement("div");
       cardTop.classList.add("card-top");
 
-      // Create card-label div and set its text content
       const cardLabel = document.createElement("div");
       cardLabel.classList.add("card-label");
       cardLabel.textContent = cardData.number;
 
-      // Create swipe-icon div
       const swipeIcon = document.createElement("div");
       swipeIcon.classList.add("swipe-icon");
 
-      // Create the span element for the material-symbols-outlined
       const materialSpan = document.createElement("span");
       materialSpan.classList.add("material-symbols-outlined");
       materialSpan.textContent = "swipe";
 
-      // Append the span element to the swipe-icon div
       swipeIcon.appendChild(materialSpan);
 
-      // Append cardLabel and swipeIcon to card-top container
       cardTop.appendChild(cardLabel);
       cardTop.appendChild(swipeIcon);
 
-      // Append card-top container to the card
       card.appendChild(cardTop);
 
       const imageWrapper = document.createElement("div");
