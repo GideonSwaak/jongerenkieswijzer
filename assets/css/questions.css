@@ -83,7 +83,7 @@ ion-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  border-radius: 1.2vw; /* Adjusted for vw units */
+  border-radius: 1.6vw; /* Adjusted for vw units */
   border: 0.2vw solid #fffc61;
   background-color: #000;
   color: #fff;
