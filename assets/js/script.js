@@ -532,3 +532,43 @@ class Carousel {
 let board = document.querySelector("#board");
 
 let carousel = new Carousel(board);
+
+const modal = document.getElementById("bottomModal");
+const openModalButton = document.getElementById("openModal");
+const closeModalButton = document.getElementById("closeModal");
+const backButton = document.querySelector(".back-button");
+
+function goBackToLastPage() {
+  window.history.back();
+}
+
+function openModal() {
+  modal.style.display = "block";
+  setTimeout(() => {
+    modal.style.height = isMobile() ? "100svh" : "100svh";
+    document.querySelector("footer").style.zIndex = "-1";
+  }, 10);
+}
+
+function closeModal() {
+  modal.style.height = "0";
+  setTimeout(() => {
+    modal.style.display = "none";
+    document.querySelector("footer").style.zIndex = "1";
+  }, 300);
+}
+
+openModalButton.addEventListener("click", openModal);
+
+closeModalButton.addEventListener("click", closeModal);
+backButton.addEventListener("click", goBackToLastPage);
+
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+function isMobile() {
+  return window.innerWidth <= 768;
+}

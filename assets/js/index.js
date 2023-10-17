@@ -7,25 +7,13 @@ const mobileToQuestions = document.getElementById("mobileToQuestions");
 document
   .getElementById("desktopToQuestions")
   .addEventListener("click", function () {
-    const transition = document.createElement("div");
-    transition.className = "page-transition";
-    document.body.appendChild(transition);
-
-    transition.addEventListener("animationend", function () {
-      window.location.href = "cards.html";
-    });
+    window.location.href = "cards.html";
   });
 
 document
   .getElementById("mobileToQuestions")
   .addEventListener("click", function () {
-    const transition = document.createElement("div");
-    transition.className = "page-transition";
-    document.body.appendChild(transition);
-
-    transition.addEventListener("animationend", function () {
-      window.location.href = "cards.html";
-    });
+    window.location.href = "cards.html";
   });
 
 function openModal() {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/questions.css" />
+    <link rel="stylesheet" href="/assets/css/handletransition.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
@@ -21,14 +22,54 @@
     ></script>
   </head>
   <body>
-    <div class="page-transition"></div>
     <div id="modal-container"></div>
     <section>
+      <div class="back-button">Terug</div>
       <div id="board"></div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     </section>
+    <div id="bottomModal" class="footer-modal">
+      <button id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="footer-modal-content">
+        <div class="footer-modal-upper-half">
+          <div class="footer-text-wrapper">
+            <div class="footer-front-text">Bijdragen geleverd door:</div>
+            <div class="footer-front-mobile-list-container">
+              <ul class="footer-front-mobile-list">
+                <li>Bijdragen</li>
+                <li>geleverd</li>
+                <li>door:</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-modal-lower-half">
+          <div class="footer-modal-lower-half-buttons">
+            <div class="lower-half-buttons-first-row">
+              <button class="logo-izi"></button>
+              <button class="logo-repr"></button>
+              <button class="logo-wemagine"></button>
+            </div>
+            <div class="lower-half-buttons-second-row">
+              <button class="logo-njr"></button>
+              <button class="logo-fnv"></button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy NJR</a>
+          <a href="#">Privacy IZI Solutions</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-credits" id="openModal">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+    </footer>
   </body>
 
   <script type="module" src="/assets/js/script.js"></script>
+  <script type="module" src="/assets/js/handletransition.js"></script>
 </html>
