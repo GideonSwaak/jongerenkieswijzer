@@ -231,6 +231,10 @@ class Carousel {
     }
   }
 
+  onTap(e) {
+    console.log("Tap event detected");
+  }
+
   onPan(e) {
     if (!this.isPanning) {
       this.isPanning = true;
@@ -325,18 +329,20 @@ class Carousel {
       }
 
       const modal = document.createElement("div");
-      modal.classList.add("modal");
+      modal.classList.add("card-modal");
       modal.id = `modal-${this.cardNumber}`;
       modal.style.display = "none"; // Hide the modal by default
       modal.innerHTML = `
-        <div class="modal-content">
-          <span class="close-button" data-modal="modal-${this.cardNumber}">&times;</span>
+        <div class="card-modal-content">
+          <span class="card-modal-close-button" data-modal="modal-${this.cardNumber}">&times;</span>
           <p class="modal-text">${cardData.toelichting}</p>
         </div>
       `;
 
       // Inside your `push()` method, add an event listener for the close button
-      const closeButtons = modal.getElementsByClassName("close-button");
+      const closeButtons = modal.getElementsByClassName(
+        "card-modal-close-button"
+      );
       for (const closeButton of closeButtons) {
         closeButton.addEventListener("click", () => {
           const modalId = closeButton.getAttribute("data-modal");
@@ -439,7 +445,7 @@ class Carousel {
       this.cardNumber++;
 
       if (this.cardNumber > this.totalCards) {
-        alert("Last card reached!");
+        alert("Laatste kaart");
         return;
       }
     }

@@ -4,17 +4,40 @@ const closeModalButton = document.getElementById("closeModal");
 const desktopToQuestions = document.getElementById("desktopToQuestions");
 const mobileToQuestions = document.getElementById("mobileToQuestions");
 
-desktopToQuestions.addEventListener("click", () => {
-  window.location.href = "cards.html";
-});
-mobileToQuestions.addEventListener("click", () => {
-  window.location.href = "cards.html";
-});
+// desktopToQuestions.addEventListener("click", () => {
+//   window.location.href = "cards.html";
+// });
+// mobileToQuestions.addEventListener("click", () => {
+//   window.location.href = "cards.html";
+// });
+document
+  .getElementById("desktopToQuestions")
+  .addEventListener("click", function () {
+    const transition = document.createElement("div");
+    transition.className = "page-transition";
+    document.body.appendChild(transition);
+
+    transition.addEventListener("animationend", function () {
+      window.location.href = "cards.html";
+    });
+  });
+
+document
+  .getElementById("mobileToQuestions")
+  .addEventListener("click", function () {
+    const transition = document.createElement("div");
+    transition.className = "page-transition";
+    document.body.appendChild(transition);
+
+    transition.addEventListener("animationend", function () {
+      window.location.href = "cards.html";
+    });
+  });
 
 function openModal() {
   modal.style.display = "block";
   setTimeout(() => {
-    modal.style.height = isMobile() ? "17vh" : "23vh";
+    modal.style.height = isMobile() ? "100svh" : "100svh";
     document.querySelector("footer").style.zIndex = "-1";
   }, 10);
 }
