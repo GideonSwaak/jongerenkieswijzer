@@ -177,6 +177,7 @@ class Carousel {
       },
     ];
 
+    this.swipedCards = [];
     this.push();
     this.push();
     this.handle();
@@ -417,6 +418,10 @@ class Carousel {
       previousButton.innerHTML = '<i class="fa-solid fa-angles-left"></i>';
       buttonContainer.appendChild(previousButton);
 
+      previousButton.addEventListener("click", () => {
+        this.pop();
+      });
+
       const thumbsDownButton = document.createElement("button");
       thumbsDownButton.innerHTML = '<i class="fa-regular fa-thumbs-down"></i>';
       thumbsDownButton.addEventListener("click", () => {
@@ -455,11 +460,36 @@ class Carousel {
     }
   }
 
+  pop() {
+    if (this.swipedCards.length > 0) {
+      const { card, direction } = this.swipedCards.pop();
+      if (direction === "left") {
+        this.board.insertBefore(card, this.board.firstChild);
+        this.cardNumber--;
+      } else if (direction === "up") {
+        this.board.insertBefore(card, this.board.firstChild);
+        this.cardNumber--;
+      } else if (direction === "right") {
+        this.topCard.style.transform =
+          "translateX(200%) translateY(-50%) rotate(0deg)";
+        this.nextCard.style.transform =
+          "translateX(-50%) translateY(-50%) rotate(0deg) scale(0.95)";
+        this.board.insertBefore(card, this.topCard);
+        setTimeout(() => {
+          this.board.removeChild(this.topCard);
+          this.push();
+          this.handle();
+        }, 200);
+      }
+    }
+  }
   swipeLeft() {
     this.topCard.style.transform =
       "translateX(-200%) translateY(-50%) rotate(0deg)";
     this.nextCard.style.transform =
       "translateX(-50%) translateY(-50%) rotate(0deg) scale(0.95)";
+
+    this.swipedCards.push({ card: this.topCard, direction: "left" });
 
     setTimeout(() => {
       this.board.removeChild(this.topCard);
@@ -474,6 +504,8 @@ class Carousel {
     this.nextCard.style.transform =
       "translateX(-50%) translateY(-50%) rotate(0deg) scale(0.95)";
 
+    this.swipedCards.push({ card: this.topCard, direction: "up" });
+
     setTimeout(() => {
       this.board.removeChild(this.topCard);
       this.push();
@@ -486,6 +518,8 @@ class Carousel {
       "translateX(200%) translateY(-50%) rotate(0deg)";
     this.nextCard.style.transform =
       "translateX(-50%) translateY(-50%) rotate(0deg) scale(0.95)";
+
+    this.swipedCards.push({ card: this.topCard, direction: "right" });
 
     setTimeout(() => {
       this.board.removeChild(this.topCard);
