@@ -17,7 +17,7 @@ section {
   width: 100%;
   height: 100%;
   position: relative;
-  perspective: 2000px; /* Set a perspective value for 3D effect */
+  perspective: 2000px;
   background-color: rgb(245, 247, 250);
 }
 
@@ -35,53 +35,16 @@ section {
   border-radius: 1%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   background-color: white;
-  transform: translateX(-40%) translateY(-60%) translateZ(0) rotateY(0deg); /* Apply a 3D transform */
-  transition: transform 0.5s; /* Add a smooth transition */
-  backface-visibility: hidden; /* Hide the back of the card */
-  transform-style: preserve-3d; /* Preserve 3D transformations */
+  transform: translateX(-40%) translateY(-60%) translateZ(0) rotateY(0deg);
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
   cursor: Grab;
 }
 
 .card:nth-child(even) {
-  transform: translateX(-90%) translateY(-50%) translateZ(-20px) rotateY(0deg); /* Shift even cards back on the Z-axis */
+  transform: translateX(-90%) translateY(-50%) translateZ(-20px) rotateY(0deg);
 }
-
-/* .card-container {
-  position: relative;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 17px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
-
-.card1 {
-  width: 500px;
-  height: 500px;
-  transform: translate(-50%, -55%) translate(-0px, -20px);
-  z-index: 3;
-  box-shadow: 0 0 15px -6px #000000;
-}
-
-.card2 {
-  width: 550px;
-  height: 350px;
-  z-index: 2;
-  transform: translate(-50%, -56%) translate(-0px, -20px);
-  box-shadow: 0 0 11px -6px #000000;
-}
-
-.card3 {
-  width: 590px;
-  height: 400px;
-  z-index: 1;
-  transform: translate(-50%, -50%) translate(0px, -40px);
-  box-shadow: 0 0 10px -6px #000000;
-} */
 
 .l-container {
   background: #ffffff;
@@ -216,35 +179,35 @@ section {
 .bubbles-left {
   position: absolute;
   overflow: hidden;
-  top: -10%; /* Adjusted top position */
-  left: -6%; /* Adjusted left position */
-  width: 40vw; /* Adjusted width */
-  height: 40vh; /* Adjusted height */
+  top: -10%;
+  left: -6%;
+  width: 40vw;
+  height: 40vh;
 }
 
 .bubbles-left-svg {
   background: url("/assets/img/bubbles-left.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%; /* Set width to 100% to fill the container */
-  height: 100%; /* Set height to 100% to fill the container */
+  width: 100%;
+  height: 100%;
 }
 
 .bubbles-right {
   position: absolute;
   overflow: hidden;
-  top: -10%; /* Adjusted top position */
-  right: -6%; /* Adjusted right position */
-  width: 40vw; /* Adjusted width */
-  height: 40vh; /* Adjusted height */
+  top: -10%;
+  right: -6%;
+  width: 40vw;
+  height: 40vh;
 }
 
 .bubbles-right-svg {
   background: url("/assets/img/bubbles-left.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%; /* Set width to 100% to fill the container */
-  height: 100%; /* Set height to 100% to fill the container */
+  width: 100%;
+  height: 100%;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);

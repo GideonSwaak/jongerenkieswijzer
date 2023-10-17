@@ -25,28 +25,26 @@ ion-icon {
   font-size: 10vw;
 }
 
-/* cards.css */
 .page-transition {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fffc61; /* Start with a yellow background */
+  background: #fffc61;
   z-index: 9999;
   animation: transition 0.7s forwards;
 }
 
 @keyframes transition {
   0% {
-    height: 100%; /* Start with full height */
+    height: 100%;
   }
   100% {
-    height: 0; /* Reduce height to 0 to hide the animation */
+    height: 0;
   }
 }
 
-/* Style for the last-swiped-card-modal */
 .last-swiped-card-modal {
   position: fixed;
   top: 0;
@@ -60,7 +58,6 @@ ion-icon {
   z-index: 999;
 }
 
-/* Style for the content inside the last-swiped-card-modal */
 .last-swiped-card-modal-content {
   background: #fff;
   padding: 20px;
@@ -71,7 +68,6 @@ ion-icon {
   overflow: auto;
 }
 
-/* Style for the close button in the last-swiped-card-modal */
 .last-swiped-card-modal-close-button {
   position: absolute;
   top: 10px;
@@ -81,14 +77,11 @@ ion-icon {
   color: #888;
 }
 
-/* Additional styling for the modal content, if needed */
 .last-swiped-card-modal-content p {
   font-size: 16px;
   line-height: 1.4;
   color: #333;
 }
-
-/* Add any other styles you need for your modal content */
 
 .card-modal {
   display: none;
@@ -187,6 +180,19 @@ ion-icon {
   display: flex;
   justify-content: center;
   place-items: center;
+  height: 5vw;
+}
+
+.lange-stelling-vraag {
+  font-size: 1.2vw;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  padding: 0.7vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  place-items: center;
   height: 6vw;
 }
 
@@ -194,7 +200,7 @@ ion-icon {
   text-align: center;
   margin: 0.8vw 0;
   position: absolute;
-  bottom: 8.5vw;
+  bottom: 8vw;
   width: 100%;
 }
 
@@ -335,17 +341,6 @@ ion-icon {
   transition: 0.3s;
 }
 
-/* .card-button-container button:nth-child(odd) {
-  background-color: #fffc61;
-  color: #000;
-}
-
-.card-button-container button:nth-child(even) {
-  background-color: #000;
-  border: 0.2vw solid #fffc61;
-  color: #fff;
-} */
-
 .card-overlay-red {
   background-color: rgba(255, 0, 0, 0.6);
 }
@@ -374,7 +369,7 @@ ion-icon {
 @media only screen and (max-width: 630px) {
   .card {
     width: 90vw;
-    height: 143vw;
+    height: 133vw;
     border: 0.6vw solid #fffc61;
     border-radius: 2.7vw;
   }
@@ -410,14 +405,21 @@ ion-icon {
     font-size: 4.5vw;
     padding: 2vw 7vw;
     margin-top: 10px;
-    height: 25vw;
+    height: 17vw;
+  }
+
+  .lange-stelling-vraag {
+    font-size: 3.5vw;
+    padding: 2vw 7vw;
+    margin-top: 10px;
+    height: 17vw;
   }
 
   .readmore-link {
     margin: 4vw 0;
     position: absolute;
     width: 100%;
-    bottom: 28.5vw;
+    bottom: 26.5vw;
   }
 
   .readmore-link a {
@@ -447,7 +449,7 @@ ion-icon {
 
   .card-button-container {
     position: absolute;
-    bottom: 4vw;
+    bottom: 2vw;
     width: 100%;
   }
 
@@ -507,9 +509,9 @@ ion-icon {
     font-size: 4.7vw;
     border-radius: 2.5vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-width: 80%; /* Adjust to your preference */
+    max-width: 80%;
   }
-  /* Close button (optional) */
+
   .card-modal-close-button {
     position: absolute;
     top: 2vw;

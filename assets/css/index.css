@@ -14,14 +14,13 @@ section {
   height: 100svh;
 }
 
-/* index.css */
 .page-transition {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 0;
-  background: #fffc61; /* Start with yellow background */
+  background: #fffc61;
   z-index: 9999;
   animation: transition 0.7s forwards;
 }

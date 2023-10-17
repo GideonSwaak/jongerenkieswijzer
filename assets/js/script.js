@@ -3,7 +3,6 @@ class Carousel {
     this.board = element;
     this.cardNumber = 1;
     this.totalCards = 20;
-
     this.cardData = [
       {
         number: "1/20",
@@ -70,7 +69,7 @@ class Carousel {
         question: "Het openbaar vervoer moet gratis worden",
         readmore: "Lees toelichting.",
         toelichting:
-          "Het Nederlandse openbaar vervoer hoort bij de duurste ter wereld. In Nederland dekken subsidies ongeveer de helft van de kosten van het openbaar vervoer. De overige kosten betalen reizigers zelf.",
+          "Het Nederlandse openbaar vervoer hoort bij de duurste ter wereld. In Nederland dekken subsidies ongeveer de helft van de kosten van het openbaarvervoer. De overige kosten betalen reizigers zelf.",
       },
       {
         number: "9/20",
@@ -101,76 +100,80 @@ class Carousel {
       {
         number: "12/20",
         memeImage: "assets/img/memes/mem1.png",
-        question: "Nederland moet de dienstplicht opnieuw invoeren",
+        question:
+          "Het eigen risico moet voor jongeren tot en met 23 jaar worden afgeschaft",
         readmore: "Lees toelichting.",
         toelichting:
-          "Nederland kent sinds 1996 geen dienstplicht meer. Met een eventuele herinvoering van de dienstplicht kunnen jongens en meisjes tussen de 17 en 27 jaar worden opgeroepen voor militaire dienst. Tegenstanders vinden dit niet meer van deze tijd, terwijl voorstanders het nuttig vinden voor sociale samenhang en discipline.",
+          "Het verplichte eigen risico geldt voor iedereen van 18 jaar of ouder met een Nederlandse zorgverzekering. Jongeren onder de 18 jaar zijn gratis meeverzekerd bij één van de ouders. Zij hoeven geen eigen risico te betalen wanneer zij gebruik maken van zorg uit het basispakket.",
       },
       {
         number: "13/20",
         memeImage: "assets/img/memes/mem2.png",
-        question: "De overheid moet voedselverspilling actiever tegengaan",
+        question:
+          "De overheid moet meer investeren in sportieve, culturele en artistieke activiteiten voor jongeren",
         readmore: "Lees toelichting.",
         toelichting:
-          "In Nederland wordt jaarlijks veel voedsel weggegooid. Dit gebeurt in huishoudens, supermarkten en horeca. Er zijn initiatieven om voedselverspilling tegen te gaan, maar de vraag is of de overheid hier een actievere rol in moet spelen.",
+          "De overheid moet ervoor zorgen dat elke jongere gelijke kansen heeft om deel te nemen aan recreatieve, artistieke en culturele voorzieningen.",
       },
       {
         number: "14/20",
         memeImage: "assets/img/memes/mem1.png",
-        question: "Nederland moet een bindend referendum invoeren",
+        question: "Er moet een generatietoets komen",
         readmore: "Lees toelichting.",
         toelichting:
-          "In Nederland bestaat al de mogelijkheid voor een raadgevend referendum. Een bindend referendum zou betekenen dat de regering zich verplicht moet houden aan de uitslag van het referendum.",
+          "Jongeren onder de 18 en toekomstige generaties hebben geen stem in de politiek. Er moet een generatietoets komen bij nieuwe wetgeving, die duidelijk maakt wat de impact is op huidige en toekomstige generaties jongeren.",
       },
       {
         number: "15/20",
         memeImage: "assets/img/memes/mem2.png",
-        question: "Er moet meer geld naar kunst en cultuur",
+        question:
+          "Jongeren die onder het leenstelsel hebben gestudeerd moeten meer worden gecompenseerd voor de opgebouwde studieschuld",
         readmore: "Lees toelichting.",
         toelichting:
-          "De afgelopen jaren is er flink bezuinigd op kunst en cultuur. Dit heeft geleid tot discussie over de waarde en financiering van de culturele sector. Sommige partijen vinden dat er juist meer geïnvesteerd moet worden in kunst en cultuur.",
+          "Studenten die hebben gestudeerd onder het leenstelsel hebben geen basisbeurs gehad. Er is nu een tegemoetkoming van € 29,92 per maand alleen voor de officiële duur van de studie, waarvoor studenten hun diploma hebben behaald. Terwijl zij anders 3x zoveel aan basisbeurs hadden ontvangen.",
       },
       {
         number: "16/20",
         memeImage: "assets/img/memes/mem1.png",
-        question: "De AOW-leeftijd moet worden verlaagd",
+        question:
+          "Studentenkamers moeten ook in aanmerking kunnen komen voor huurtoeslag",
         readmore: "Lees toelichting.",
         toelichting:
-          "De AOW-leeftijd is gekoppeld aan de levensverwachting en stijgt daardoor. De discussie gaat over het tempo van deze stijging en de gewenste AOW-leeftijd. Voorstanders willen de leeftijd koppelen aan de gemiddelde levensverwachting.",
+          "Huurtoeslag is een bijdrage van de overheid in de huurkosten, waarbij een van de voorwaarden is dat je een zelfstandige woonruimte hebt. Wie de keuken, badkamer of voordeur deelt, valt buiten de boot. Studentenkamers zijn vaak geen zelfstandige woningen waardoor studenten nu vaak niet in aanmerking komen voor huurtoeslag.",
       },
       {
         number: "17/20",
         memeImage: "assets/img/memes/mem2.png",
-        question: "Nederland moet het koningshuis afschaffen",
+        question: "Huurprijzen in de vrije sector moeten worden vastgesteld",
         readmore: "Lees toelichting.",
         toelichting:
-          "Nederland is een constitutionele monarchie. Er is discussie over het nut en de kosten van het koningshuis. Sommigen willen het koningshuis behouden, terwijl anderen pleiten voor afschaffing.",
+          "Veel jongeren huren in de vrije huursector omdat ze nog te weinig vermogen hebben om een huis te kopen en niet terecht kunnen in de sociale sector door de lange wachttijden. Door de prijzen in de vrije sector te reguleren kan de middenhuur goedkoper worden voor jongeren.",
       },
       {
         number: "18/20",
         memeImage: "assets/img/memes/mem1.png",
         question:
-          "Het vak geschiedenis moet verplicht zijn op middelbare scholen",
+          "Milieuvervuilende bedrijven moeten betalen voor de schade die ze veroorzaken",
         readmore: "Lees toelichting.",
         toelichting:
-          "Niet alle middelbare scholen in Nederland verplichten het vak geschiedenis. Dit leidt tot discussie over de waarde van het vak en het behoud van historisch besef bij leerlingen.",
+          "Consumenten draaien nu voornamelijk op voor de kosten via belastingen, terwijl de meeste milieuschade in Nederland plaatsvindt door bedrijven, vooral bij de verwerking van grondstoffen tot materialen en halffabricaten.",
       },
       {
         number: "19/20",
         memeImage: "assets/img/memes/mem2.png",
-        question: "De Nederlandse politie moet etnisch profileren tegen gaan",
+        question:
+          "Overheidsinstanties mogen etniciteit niet gebruiken om fraude te bestrijden",
         readmore: "Lees toelichting.",
         toelichting:
-          "Etnisch profileren betekent dat de politie mensen staande houdt of controleert op basis van hun huidskleur, afkomst, religie of andere etnische kenmerken. Dit is controversieel en roept discussie op over discriminatie en gelijke behandeling door de politie.",
+          "Naar aanleiding van het toeslagenschandaal gaat het hier steeds vaker over, maar deze discussie speelt bijvoorbeeld ook bij de politie en DUO. Er wordt dan gesproken over etnisch profileren. Nationaliteit, afkomst of huidskleur zijn dan onderdeel van een risicoprofiel waardoor mensen gecontroleerd worden vanwege die kenmerken in plaats van gedrag.",
       },
       {
         number: "20/20",
         memeImage: "assets/img/memes/mem1.png",
-        question:
-          "Ouders moeten verplicht worden om hun kinderen te laten vaccineren",
+        question: "De overheid moet een Nationale Jeugdstrategie ontwikkelen",
         readmore: "Lees toelichting.",
         toelichting:
-          "Vaccinaties zijn belangrijk om de volksgezondheid te beschermen. Er zijn ouders die ervoor kiezen om hun kinderen niet te laten vaccineren. Dit roept vragen op over de verplichting van vaccinaties.",
+          "Een Nationale Jeugdstrategie is een actieplan voor de overheid met concrete doelen en acties die nodig zijn voor een goede toekomst van jongeren. Deze doelen worden door jongeren samen met beleidsmakers opgesteld, om zo landelijk beleid te maken dat uitgaat van de behoeftes van jongeren en zorgt dat de grote problemen waar zij tegenaan lopen in samenhang worden aangepakt.",
       },
     ];
 
@@ -331,7 +334,7 @@ class Carousel {
       const modal = document.createElement("div");
       modal.classList.add("card-modal");
       modal.id = `modal-${this.cardNumber}`;
-      modal.style.display = "none"; // Hide the modal by default
+      modal.style.display = "none";
       modal.innerHTML = `
         <div class="card-modal-content">
           <span class="card-modal-close-button" data-modal="modal-${this.cardNumber}">&times;</span>
@@ -339,7 +342,6 @@ class Carousel {
         </div>
       `;
 
-      // Inside your `push()` method, add an event listener for the close button
       const closeButtons = modal.getElementsByClassName(
         "card-modal-close-button"
       );
@@ -353,7 +355,6 @@ class Carousel {
         });
       }
 
-      // Append the modal to the modal container
       modalContainer.appendChild(modal);
 
       const cardTop = document.createElement("div");
@@ -388,6 +389,9 @@ class Carousel {
 
       const stellingVraagDiv = document.createElement("div");
       stellingVraagDiv.classList.add("stelling-vraag");
+      if (this.cardNumber === 15) {
+        stellingVraagDiv.classList.add("lange-stelling-vraag");
+      }
       stellingVraagDiv.textContent = cardData.question;
       card.appendChild(stellingVraagDiv);
 
@@ -397,9 +401,9 @@ class Carousel {
       readmoreLink.href = "#";
       readmoreLink.textContent = cardData.readmore;
       readmoreLink.setAttribute("data-modal", `modal-${this.cardNumber}`);
-      // Inside the push method
+
       readmoreLink.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevent the default link behavior
+        e.preventDefault();
         console.log("ff");
       });
       readmoreDiv.appendChild(readmoreLink);

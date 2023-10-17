@@ -4,12 +4,6 @@ const closeModalButton = document.getElementById("closeModal");
 const desktopToQuestions = document.getElementById("desktopToQuestions");
 const mobileToQuestions = document.getElementById("mobileToQuestions");
 
-// desktopToQuestions.addEventListener("click", () => {
-//   window.location.href = "cards.html";
-// });
-// mobileToQuestions.addEventListener("click", () => {
-//   window.location.href = "cards.html";
-// });
 document
   .getElementById("desktopToQuestions")
   .addEventListener("click", function () {
