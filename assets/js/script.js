@@ -151,16 +151,9 @@ class Carousel {
 	}
 
 	push(previous = false) {
-		document.getElementById("question-number").textContent = this.cardNumber;
-		document.getElementById("last-action").textContent = this.lastAction;
-		document.getElementById("top-card").textContent = document.querySelector("#board .card:nth-child(2)")?.getAttribute("data-card");
-		let secondCard = document.querySelector("#board .card:nth-child(1)");
-		if (secondCard) {
-			document.getElementById("bottom-card").textContent = secondCard.getAttribute("data-card");
-		}
 		if (this.cardNumber <= this.totalCards) {
 			let cardData = this.cardData[this.cardNumber - 1];
-			if (previous) {
+			if (previous && this.cardNumber > 1) {
 				cardData = this.cardData[this.cardNumber - 2];
 			} 
 			let card = document.createElement("div");
@@ -291,7 +284,7 @@ class Carousel {
 			card.appendChild(buttonContainer);
 			card.setAttribute("data-card", this.cardNumber);
 			this.board.insertBefore(card, this.board.firstChild);
-			if (previous) {
+			if (previous && this.cardNumber > 1) {
 				this.cardNumber--;
 			} else {
 				this.cardNumber++;
@@ -304,7 +297,13 @@ class Carousel {
 			}
 		}
 	}
+
 	previous() {
+		console.log(this.cardNumber)
+		if (this.cardNumber + 1 === 1) {
+			alert("Eerste kaart");
+			return;
+		}
 		this.board.removeChild(this.topCard);
 		console.log(this.lastDirection)
 		if (this.lastDirection === "next") {
